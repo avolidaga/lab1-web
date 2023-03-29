@@ -1,9 +1,8 @@
-# lab1-web
-Лабораторная работа № 1 по веб программированию 3 семестр
+# Лабораторная работа № 1
 
 
 ---
 
 Вариант 
 
-[](https://github.com/avolidaga/lab1-web/blob/bdb10beff975983dc8351298cdb1080399761ac3/Screenshot%202022-08-27%20at%2018.22.31.png)
+[](https://github.com/avolidaga/lab1-web/blob/288340a3ae8058f885dc8a1f12506d8a1d2721ec/Screenshot%202022-08-27%20at%2018.22.31.png)
