@@ -1,0 +1,21 @@
+.table {
+  margin: 0 auto;
+  padding: 20px;
+  >tbody{vertical-align: top;}
+  &_graph-svg {
+    border: 1px solid #000;
+    box-sizing: border-box;
+  }
+
+  &_graph-shape {
+    fill: #95e7cb;
+    fill-opacity: 85%;
+  }
+
+  &_graph-axle-line {
+    stroke: black;
+  }
+  &_graph-point {
+    stroke: black;
+  }
+}

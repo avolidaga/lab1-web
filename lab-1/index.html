@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Web-lab-2</title>
+  </head>
+  <body>
+    <header class="header"> Агадилова Малика P32302
+      <span>Вариант: 28945</span>
+    </header>
+    <main>
+      <div class="container">
+        <table class="table">
+          <tbody>
+            <tr>
+              <th class="table_graph">
+                <svg
+                  class="table_graph-svg"
+                  viewBox="0 0 300 300"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <!-- четверть шара -->
+                  <path
+                    class="table_graph-shape"
+                    d="M 250 150 A 100 100 0 0 1 150 250 L 150 150 Z"
+                  />
+
+                  
+
+                  <!-- четверть прямоугольника -->
+                  <polygon
+                    class="table_graph-shape"
+                    points="50,50 50,150 150,150 150,50"
+                  />
+                  <!-- четверть треугольника -->
+                  <polygon
+                    class="table_graph-shape"
+                    points="150,50 150,150, 200,150"
+                  />
+
+                  <!-- линия -->
+                  <text class="graph-axle-text" x="290" y="140">x</text>
+                  <line
+                    class="table_graph-axle-line"
+                    x1="0"
+                    x2="295"
+                    y1="150"
+                    y2="150"
+                  />
+                  <polygon
+                    class="graph-axle-arrow"
+                    points="299,150 290,155 290,145"
+                  />
+
+                  <text class="graph-axle-text" x="160" y="10">y</text>
+                  <line
+                    class="table_graph-axle-line"
+                    x1="150"
+                    x2="150"
+                    y1="5"
+                    y2="300"
+                  />
+                  <polygon points="150,1 145,10 155,10" />
+
+                  <!-- labels -->
+                  <text text-anchor="middle" x="50" y="140">-R</text>
+                  <text text-anchor="middle" x="100" y="140">-R/2</text>
+                  <text text-anchor="middle" x="200" y="140">R/2</text>
+                  <text text-anchor="middle" x="250" y="140">R</text>
+
+                  <text text-anchor="start" x="160" y="255">-R</text>
+                  <text text-anchor="start" x="160" y="205">-R/2</text>
+                  <text text-anchor="start" x="160" y="105">R/2</text>
+                  <text text-anchor="start" x="160" y="55">R</text>
+                  <line
+                    class="table_graph-point"
+                    x1="50"
+                    x2="50"
+                    y1="145"
+                    y2="155"
+                  />
+                  <line
+                    class="table_graph-point"
+                    x1="100"
+                    x2="100"
+                    y1="145"
+                    y2="155"
+                  />
+                  <line
+                    class="table_graph-point"
+                    x1="200"
+                    x2="200"
+                    y1="145"
+                    y2="155"
+                  />
+                  <line
+                    class="table_graph-point"
+                    x1="250"
+                    x2="250"
+                    y1="145"
+                    y2="155"
+                  />
+
+                  <line
+                    class="table_graph-point"
+                    x1="145"
+                    x2="155"
+                    y1="250"
+                    y2="250"
+                  />
+                  <line
+                    class="table_graph-point"
+                    x1="145"
+                    x2="155"
+                    y1="200"
+                    y2="200"
+                  />
+                  <line
+                    class="table_graph-point"
+                    x1="145"
+                    x2="155"
+                    y1="100"
+                    y2="100"
+                  />
+                  <line
+                    class="table_graph-point"
+                    x1="145"
+                    x2="155"
+                    y1="50"
+                    y2="50"
+                  />
+                </svg>
+              </th>
+              <th style="width: 50%">
+                <div class="row">
+                  <form class="table_form form" id="form">
+                    <div class="form_radio-select">
+                      <h4 class="form_title">R value:</h4>
+                      <input
+                        type="text"
+                        placeholder="In range (2:5)"
+                        class="form_input-text"
+                        id="R-input-text"
+                      />
+                    </div>
+                    <div class="form_text-select">
+                      <h4 class="form_title">Y value:</h4>
+                      <input
+                        type="text"
+                        placeholder="In range (-3:3)"
+                        class="form_input-text"
+                        id="Y-input-text"
+                      />
+                    </div>
+                    <div class="form_checkbox-select">
+                      <h4 class="form_title">X value:</h4>
+                    </div>
+                    <button class="form_btn" type="submit">Отправить</button>
+                  </form>
+                  <table class="scripts-info">
+                    <thead>
+                      <tr class="scripts-info_header">
+                        <th>X value</th>
+                        <th>Y value</th>
+                        <th>R value</th>
+                        <th>Area hit</th>
+                        <th>Current time</th>
+                        <th>Execution time</th>
+                      </tr>
+                    </thead>
+                    <tbody class="scripts-info_body"></tbody>
+                  </table>
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <script type="module" src="./scripts/main.js"></script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Web-lab-1</title>
+  </head>
+  <body>
+    <header class="header"> Агадилова Малика P32302
+      <span>Вариант: 3300</span>
+    </header>
+    <main>
+      <div class="container">
+        <table class="table">
+          <tbody>
+            <tr>
+              <th class="table_graph">
+                <svg
+                  class="table_graph-svg"
+                  viewBox="0 0 300 300"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  
+                  <path
+                    class="table_graph-shape"
+                    d="M 250 150 A 100 100 0 0 1 150 250 L 150 150 Z"
+                  />
+
+                 
+                  <polygon
+                    class="table_graph-shape"
+                    points="150,50 150,150, 200,150"
+                  />
+
+                 
+                  <polygon
+                    class="table_graph-shape"
+                    points="50,50 50,150 150,150 150,50"
+                  />
+
+                  
+                  <text class="graph-axle-text" x="290" y="140">x</text>
+                  <line
+                    class="table_graph-axle-line"
+                    x1="0"
+                    x2="295"
+                    y1="150"
+                    y2="150"
+                  />
+                  <polygon
+                    class="graph-axle-arrow"
+                    points="299,150 290,155 290,145"
+                  />
+
+                  <text class="graph-axle-text" x="160" y="10">y</text>
+                  <line
+                    class="table_graph-axle-line"
+                    x1="150"
+                    x2="150"
+                    y1="5"
+                    y2="300"
+                  />
+                  <polygon points="150,1 145,10 155,10" />
+
+                  
+                  <text text-anchor="middle" x="50" y="140">-R</text>
+                  <text text-anchor="middle" x="100" y="140">-R/2</text>
+                  <text text-anchor="middle" x="200" y="140">R/2</text>
+                  <text text-anchor="middle" x="250" y="140">R</text>
+
+                  <text text-anchor="start" x="160" y="255">-R</text>
+                  <text text-anchor="start" x="160" y="205">-R/2</text>
+                  <text text-anchor="start" x="160" y="105">R/2</text>
+                  <text text-anchor="start" x="160" y="55">R</text>
+                  <line
+                    class="table_graph-point"
+                    x1="50"
+                    x2="50"
+                    y1="145"
+                    y2="155"
+                  />
+                  <line
+                    class="table_graph-point"
+                    x1="100"
+                    x2="100"
+                    y1="145"
+                    y2="155"
+                  />
+                  <line
+                    class="table_graph-point"
+                    x1="200"
+                    x2="200"
+                    y1="145"
+                    y2="155"
+                  />
+                  <line
+                    class="table_graph-point"
+                    x1="250"
+                    x2="250"
+                    y1="145"
+                    y2="155"
+                  />
+
+                  <line
+                    class="table_graph-point"
+                    x1="145"
+                    x2="155"
+                    y1="250"
+                    y2="250"
+                  />
+                  <line
+                    class="table_graph-point"
+                    x1="145"
+                    x2="155"
+                    y1="200"
+                    y2="200"
+                  />
+                  <line
+                    class="table_graph-point"
+                    x1="145"
+                    x2="155"
+                    y1="100"
+                    y2="100"
+                  />
+                  <line
+                    class="table_graph-point"
+                    x1="145"
+                    x2="155"
+                    y1="50"
+                    y2="50"
+                  />
+                </svg>
+              </th>
+              <th style="width: 50%">
+                <div class="row">
+                  <form class="table_form form" id="form">
+                    <div class="form_radio-select">
+                      <h4 class="form_title">R value:</h4>
+                      <input
+                        type="text"
+                        placeholder="In range (2:5)"
+                        class="form_input-text"
+                        id="R-input-text"
+                      />
+                    </div>
+                    <div class="form_text-select">
+                      <h4 class="form_title">Y value:</h4>
+                      <input
+                        type="text"
+                        placeholder="In range (-3:3)"
+                        class="form_input-text"
+                        id="Y-input-text"
+                      />
+                    </div>
+                    <div class="form_checkbox-select">
+                      <h4 class="form_title">X value:</h4>
+                    </div>
+                    <button class="form_btn" type="submit">Отправить</button>
+                  </form>
+                  <table class="scripts-info">
+                    <thead>
+                      <tr class="scripts-info_header">
+                        <th>X value</th>
+                        <th>Y value</th>
+                        <th>R value</th>
+                        <th>Area hit</th>
+                        <th>Current time</th>
+                        <th>Execution time</th>
+                      </tr>
+                    </thead>
+                    <tbody class="scripts-info_body"></tbody>
+                  </table>
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <script type="module" src="./scripts/main.js"></script>
+  </body>
+</html> -->

@@ -1,0 +1,26 @@
+@import './graph.scss';
+@import './userInteraction.scss';
+@import './scripts-info.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #e1f1e5;
+  font-family: 'Roboto', sans-serif;
+
+  .header {
+    background: #7bb38d;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    border: 1px solid black;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}

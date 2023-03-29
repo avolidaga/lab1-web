@@ -1,0 +1,41 @@
+.row {
+  padding-left: 50px;
+}
+.form {
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 20px;
+  background: #e3f1e2;
+  margin-bottom: 30px;
+  h4 {
+    margin: 0px 0px 25px;
+  }
+  &_checkbox-select,
+  &_radio-select {
+    margin-bottom: 10px;
+  }
+  &_input-text {
+
+    border: 1px solid #73816a;
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+
+    &:focus-visible {
+      outline: 1px solid #378752;
+    }
+
+    &.error{
+      border: 1px solid red;
+    }
+  }
+
+  &_btn {
+    border: 1px solid #73816a;
+    border-radius: 20px;
+    padding: 5px 15px;
+    min-width: 100px;
+    background: #7bb38d;
+    margin-top: 20px;
+  }
+}
